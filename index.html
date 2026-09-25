@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Password Generator</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+<div class="container">
+
+<h1>
+<i class="fa-solid fa-shield-halved"></i>
+Password Generator
+</h1>
+
+<p>Create secure passwords instantly.</p>
+
+<div class="passwordBox">
+
+<input
+type="text"
+id="password"
+readonly
+placeholder="Click Generate"
+/>
+
+<button id="copy">
+<i class="fa-regular fa-copy"></i>
+</button>
+
+</div>
+
+<div class="strength">
+<div class="strength-bar"></div>
+</div>
+
+<div class="slider">
+
+<label>Password Length</label>
+
+<div class="range">
+
+<input
+type="range"
+id="length"
+min="6"
+max="32"
+value="12">
+
+<span id="lengthValue">12</span>
+
+</div>
+
+</div>
+
+<div class="options">
+
+<label>
+<input checked type="checkbox" id="upper">
+Uppercase
+</label>
+
+<label>
+<input checked type="checkbox" id="lower">
+Lowercase
+</label>
+
+<label>
+<input checked type="checkbox" id="number">
+Numbers
+</label>
+
+<label>
+<input checked type="checkbox" id="symbol">
+Symbols
+</label>
+
+</div>
+
+<button id="generate">
+Generate Password
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
